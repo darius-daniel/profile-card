@@ -1,0 +1,172 @@
+@import url('./typography.css');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    min-height: 320px;
+    max-width: 1200px;
+    margin: auto;
+
+    background: url("/main-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+strong {
+    color: #F9F871;
+    font-weight: 600;
+}
+
+.card__container {
+    padding: 12px 8px;
+    border-radius: 24px;
+
+    background: #26235C;
+    font-weight: normal;
+    color: #FFF;
+
+    position: relative;
+}
+
+.card__bottom-backdrop {
+    padding: 24px;
+    width: 100%;
+    background: #F7DF1E;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    border-radius: 0 0 24px 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+    padding-bottom: 24px;
+
+    position: relative;
+    z-index: 100;
+    border-radius: 0 0 24px 24px;
+
+    background: #26235C;
+}
+
+.card__avatar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+
+    border-radius: 100%;
+    border-right: 3px solid #F7DF1E;
+    padding: 4px;
+
+    width: calc(160px + 4px);
+    height: calc(160px + 4px);
+}
+.card__location-and-time {
+    display: flex;
+    justify-content: space-around;
+    gap: 4px;
+    font-size: 14px;
+
+    width: 100%;
+
+    color: #F7DF1E;
+    font-weight: 700;
+}
+
+.card__location-and-time p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card__location-and-time-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.card__details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+    padding: 0 24px;
+}
+
+.card__avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+
+    border: 1px solid #26235C;
+}
+
+.card__headings {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.card__full-name {
+    font-size: 24px;
+}
+
+.card__job-title {
+    font-size: 18px;
+    color: #A79AE0;
+}
+
+.card__description {
+    font-size: 16px;
+    width: 280px;
+}
+
+.card__button {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 12px;
+    padding: 12px 24px;
+    background: #A79AE0;
+    font-size: 16px;
+}
+
+.card__button:hover {
+    background: #6d5cd5;
+}
+
+.card__socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card__social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.small-logo {
+    width: 24px;
+    height: 24px;
+
+    position: relative;
+    left: 6px;
+}

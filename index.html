@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Software Engineer Profile Card | Darius Daniel</title>
+    </head>
+    <body class="lato-regular">
+        <div class="card__container">
+            <img src="/small-logo.svg" alt="" class="small-logo" />
+
+            <div class="card">
+                <div class="card__avatar-container">
+                   <img src="/darius.jpg" alt="Developer avatar" data-testid="profilePicture" class="card__avatar"> 
+                </div>
+                <div class="card__details">
+                   <div class="card__headings">
+                       <h1 class="card__full-name" data-testid="fullName">Darius Daniel</h1>
+                       <h2 class="card__job-title" data-testid="jobTitle">Software Engineer</h2>
+                   </div>
+
+                    <p class="card__description" data-testid="shortBio">
+                        A wizard who enchants users with his masterpieces.
+                        Currently making more magic with <strong>React</strong> and <strong>Next.js</strong>.
+                    </p>
+                </div>
+                <a href="mailto:dariusdaniel771@gmail.com" class="card__button" data-testid="emailAddress">
+                    dariusdaniel771@gmail.com
+                </a>
+
+                <div class="card__location-and-time">
+                    <p class="card__location" data-testid="currentLocation">
+                        <img src="/location.svg" alt="Location pin" class="card__location-and-time-icon">
+                        Kaduna, NG.
+                    </p>
+                    <p class="card__current-time" data-testid="currentTimeUTC">
+                        <img src="/clock.svg" alt="Clock icon" class="card__location-and-time-icon">
+                    </p>
+                </div>
+
+                <div class="card__socials" data-testid="socialLinks">
+                    <a href="https://x.com/_darius_daniel" target="_blank" class="card__social-link">
+                        <img src="/twitter.svg" alt="Twitter icon" class="card__social-icon">
+                    </a>
+                    <a href="https://github.com/darius-daniel" target="_blank" class="card__social-link">
+                        <img src="/github.svg" alt="Github icon" class="card__social-icon">
+                    </a>
+<!--                    <a href="https://instagram.com/dariusdaniel777" target="_blank" class="card__social-link">-->
+<!--                        <img src="/instagram.svg" alt="Instagram icon" class="card__social-icon">-->
+<!--                    </a>-->
+                </div>
+            </div>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
